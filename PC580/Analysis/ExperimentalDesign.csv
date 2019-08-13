@@ -1,0 +1,9 @@
+Label Number,TMT Label,Condition,Replicate
+1,TMT126,siULK1,2
+2,TMT10-127N,siULK1,1
+3,TMT10-127C,siULK1,4
+4,TMT10-128N,siULK1,3
+5,TMT10-128C,siControl,1
+6,TMT10-129N,siControl,4
+8,TMT10-130N,siControl,2
+10,TMT10-131,siControl,3
