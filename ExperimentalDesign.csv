@@ -1,0 +1,17 @@
+Label Number,TMT Label,Enriched,Condition,Replicate
+1,TMT126,protein,siULK1,2
+2,TMT10-127N,protein,siULK1,1
+3,TMT10-127C,protein,siULK1,4
+4,TMT10-128N,protein,siULK1,3
+5,TMT10-128C,protein,siControl,1
+6,TMT10-129N,protein,siControl,4
+8,TMT10-130N,protein,siControl,2
+10,TMT10-131,protein,siControl,3
+1,TMT10-126,phospho,siULK1,2
+2,TMT10-127N,phospho,siULK1,1
+3,TMT10-127C,phospho,siULK1,4
+4,TMT10-128N,phospho,siULK1,3
+5,TMT10-128C,phospho,siControl,1
+6,TMT10-129N,phospho,siControl,4
+8,TMT10-130N,phospho,siControl,2
+10,TMT10-131,phospho,siControl,3
