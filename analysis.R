@@ -16,20 +16,26 @@ library(openxlsx)
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
 # Setup environment
 #++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++++
-# Set working directory to script location
-this.dir <- dirname(parent.frame(2)$ofile)
-setwd(this.dir)
-# Update these if necessary. Paths are relative to the script location.
+# Update these if necessary.
 experiment.name <- "PC580"
+species <- "mouse"
+use.corrected <- TRUE
+
+# Update these if necessary. Paths are relative to the script location.
+phosphositeplus.path <- "../../"
 protein.groups.path <- "../MaxQuant Results/proteinGroups.txt"
 phosphosites.path <- "../MaxQuant Results/Phospho (STY)Sites.txt"
 experimental.design.path <- "./ExperimentalDesign.csv"
-phosphosites.literature.path <- "../../Phosphorylation_site_dataset.txt"
-kinase.substrate.path <- "../../Kinase_Substrate_Dataset.txt"
-regulatory.sites.path <- "../../Regulatory_sites.txt"
-disease.associated.sites.path <- "../../Disease-associated_sites.txt"
-species <- "mouse"
-use.corrected = T
+
+# Shouldn't need to update these
+phosphosites.literature.path <- paste(phosphositeplus.path, "Phosphorylation_site_dataset.txt", sep="")
+kinase.substrate.path <- paste(phosphositeplus.path, "Kinase_Substrate_Dataset.txt", sep="")
+regulatory.sites.path <- paste(phosphositeplus.path, "Regulatory_sites.txt", sep="")
+disease.associated.sites.path <- paste(phosphositeplus.path, "Disease-associated_sites.txt", sep="")
+
+# Set working directory to script location
+this.dir <- dirname(parent.frame(2)$ofile)
+setwd(this.dir)
 
 if (use.corrected)
 {
